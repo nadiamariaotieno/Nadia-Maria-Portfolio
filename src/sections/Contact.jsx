@@ -11,8 +11,8 @@ export default function Contact() {
         <Reveal>
           <SectionHeading kicker="05 / Contact" title="Let's Build Something" />
           <p className="text-muted">
-            The most reliable way to reach me is email. You can also find me
-            on GitHub and LinkedIn.
+            Send a message with the form, or email me directly. You can also
+            find me on GitHub and LinkedIn.
           </p>
           <dl className="mt-8 space-y-5">
             <div>

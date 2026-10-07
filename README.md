@@ -15,7 +15,7 @@ The design is a custom dark/light system with editorial typography. It does not 
 - Dark and light themes, with a saved preference
 - Project cards driven by `src/data/projects.js`
 - Links to GitHub, LinkedIn, and this repository
-- Contact form that opens an email draft (no pretend backend)
+- Contact form handled by Netlify Forms, with email as a backup
 - Semantic HTML, skip link, visible focus states, and reduced-motion support
 - SEO metadata and an SVG favicon
 
@@ -89,7 +89,7 @@ Copy `.env.example` to `.env`. Never commit secrets; this project only uses publ
 | `VITE_LINKEDIN_URL` | Public LinkedIn profile |
 | `VITE_PORTFOLIO_REPO_URL` | GitHub repo for this website |
 
-`VITE_EMAIL` is the public address shown on the site (`otienonadiamaria@gmail.com`). It is used for `mailto:` links and the contact form. It is not a secret and is not used to send mail from a server.
+`VITE_EMAIL` is the public address shown on the site (`otienonadiamaria@gmail.com`). It is used for `mailto:` links. Form submissions on the live site go through Netlify Forms, not through this variable.
 
 ## Deployment
 
@@ -108,7 +108,15 @@ This is a static Vite app. Any static host works.
 1. Import the GitHub repository.
 2. Build command: `npm run build`
 3. Publish directory: `dist`
-4. Add the `VITE_*` environment variables.
+4. Add the `VITE_*` environment variables if you want to override the defaults.
+
+After the first deploy that includes the contact form, enable email alerts:
+
+1. Site configuration → Forms
+2. Form notifications → Add notification
+3. Email to `otienonadiamaria@gmail.com`
+
+Submissions also appear in the Netlify Forms inbox. Local `npm run dev` cannot deliver those messages; only the published site can.
 
 ### GitHub Pages
 
@@ -121,7 +129,6 @@ After deploy, add the live URL to Open Graph tags in `index.html` if you want li
 - Replace abstract project previews with real screenshots (`image` on each project)
 - Publish repositories for the finance and farm systems when they are ready to share
 - Optional case-study pages when a project is complete enough to describe in depth
-- A real mail service (Formspree, Getform, or a small backend) if the mailto flow is no longer enough
 - Custom domain and Open Graph image
 
 ## Screenshots
