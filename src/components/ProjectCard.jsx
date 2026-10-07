@@ -6,12 +6,14 @@ export default function ProjectCard({ project }) {
   return (
     <article className="card group flex h-full flex-col overflow-hidden transition-transform duration-200 hover:-translate-y-1">
       {project.image ? (
-        <img
-          src={project.image}
-          alt={project.imageAlt || `${project.name} preview`}
-          className="aspect-[16/10] w-full object-cover"
-          loading="lazy"
-        />
+        <div className="border-b border-line bg-bg p-4">
+          <img
+            src={project.image}
+            alt={project.imageAlt || `${project.name} preview`}
+            className="w-full rounded-xl border border-line"
+            loading="lazy"
+          />
+        </div>
       ) : (
         <ProjectPreview type={project.preview} />
       )}
