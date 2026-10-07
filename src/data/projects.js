@@ -1,3 +1,4 @@
+import portfolioHero from '../assets/projects/portfolio-hero.png'
 import { site } from './site'
 
 /**
@@ -45,8 +46,10 @@ export const projects = [
       'This site — a personal portfolio for professional software development roles, with a clear trajectory toward secure software and cybersecurity.',
     technologies: ['React', 'Vite', 'JavaScript', 'Tailwind CSS'],
     github: site.portfolioRepoUrl,
-    live: '/',
+    live: '',
     caseStudy: '',
+    image: portfolioHero,
+    imageAlt: 'Homepage of this portfolio, with the hero introduction and a request-flow diagram',
     preview: 'portfolio',
   },
 ]

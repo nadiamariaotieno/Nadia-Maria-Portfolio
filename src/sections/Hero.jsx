@@ -40,7 +40,7 @@ export default function Hero() {
           <SocialLinks className="mt-8" />
         </Reveal>
         <Reveal delay={120} className="hidden justify-center sm:flex lg:justify-end">
-          <div className="card w-full max-w-md p-6">
+          <div className="card w-full max-w-md px-5 py-6">
             <SystemSketch />
           </div>
         </Reveal>
