@@ -14,7 +14,7 @@ The design is a custom dark/light system with editorial typography. It does not 
 - Responsive layout for mobile, tablet and desktop
 - Dark and light themes, with a saved preference
 - Project cards driven by `src/data/projects.js`
-- Honest placeholders for GitHub and LinkedIn until those URLs are added
+- Links to GitHub, LinkedIn, and this repository
 - Contact form that opens an email draft (no pretend backend)
 - Semantic HTML, skip link, visible focus states, and reduced-motion support
 - SEO metadata and an SVG favicon
@@ -89,7 +89,7 @@ Copy `.env.example` to `.env`. Never commit secrets; this project only uses publ
 | `VITE_LINKEDIN_URL` | Public LinkedIn profile |
 | `VITE_PORTFOLIO_REPO_URL` | GitHub repo for this website |
 
-Until GitHub and LinkedIn URLs are set, the site shows clearly marked placeholders instead of broken links.
+`VITE_EMAIL` is the public address shown on the site (`otienonadiamaria@gmail.com`). It is used for `mailto:` links and the contact form. It is not a secret and is not used to send mail from a server.
 
 ## Deployment
 
@@ -119,7 +119,6 @@ After deploy, add the live URL to Open Graph tags in `index.html` if you want li
 ## Future Improvements
 
 - Replace abstract project previews with real screenshots (`image` on each project)
-- Add GitHub and LinkedIn URLs
 - Publish repositories for the finance and farm systems when they are ready to share
 - Optional case-study pages when a project is complete enough to describe in depth
 - A real mail service (Formspree, Getform, or a small backend) if the mailto flow is no longer enough

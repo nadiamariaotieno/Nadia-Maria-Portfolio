@@ -18,9 +18,14 @@ export const site = {
     years: '2022–2026',
   },
   email: env.VITE_EMAIL || 'otienonadiamaria@gmail.com',
-  githubUrl: optionalUrl(env.VITE_GITHUB_URL),
-  linkedinUrl: optionalUrl(env.VITE_LINKEDIN_URL),
-  portfolioRepoUrl: optionalUrl(env.VITE_PORTFOLIO_REPO_URL),
+  githubUrl:
+    optionalUrl(env.VITE_GITHUB_URL) || 'https://github.com/nadiamariaotieno',
+  linkedinUrl:
+    optionalUrl(env.VITE_LINKEDIN_URL) ||
+    'https://www.linkedin.com/in/nadia-maria-otieno-17a701363',
+  portfolioRepoUrl:
+    optionalUrl(env.VITE_PORTFOLIO_REPO_URL) ||
+    'https://github.com/nadiamariaotieno/Nadia-Maria-Portfolio',
   githubPlaceholder: 'PLACEHOLDER FOR MY GITHUB',
   linkedinPlaceholder: 'PLACEHOLDER FOR MY LINKEDIN',
   tagline:
