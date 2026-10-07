@@ -26,8 +26,6 @@ export const site = {
   portfolioRepoUrl:
     optionalUrl(env.VITE_PORTFOLIO_REPO_URL) ||
     'https://github.com/nadiamariaotieno/Nadia-Maria-Portfolio',
-  githubPlaceholder: 'PLACEHOLDER FOR MY GITHUB',
-  linkedinPlaceholder: 'PLACEHOLDER FOR MY LINKEDIN',
   tagline:
     'I build practical web applications and reliable systems, with a growing focus on secure software development and cybersecurity.',
   exploring: [
