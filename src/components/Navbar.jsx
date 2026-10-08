@@ -3,6 +3,7 @@ import { useEffect, useId, useState } from 'react'
 import { navItems, site } from '../data/site'
 import { useActiveSection } from '../hooks/useActiveSection'
 import { scrollToId } from '../utils/scrollToId'
+import CvButton from './CvButton'
 import ThemeToggle from './ThemeToggle'
 
 export default function Navbar({ theme, onToggleTheme }) {
@@ -80,6 +81,7 @@ export default function Navbar({ theme, onToggleTheme }) {
 
         <div className="flex items-center gap-2">
           <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+          <CvButton className="hidden lg:inline-flex" />
           <a
             href="#contact"
             className="btn btn-primary hidden sm:inline-flex"
@@ -127,9 +129,10 @@ export default function Navbar({ theme, onToggleTheme }) {
                 {item.label}
               </a>
             ))}
+            <CvButton className="mt-3 w-full" />
             <a
               href="#contact"
-              className="btn btn-primary mt-3"
+              className="btn btn-primary mt-2"
               onClick={(event) => {
                 event.preventDefault()
                 goTo('contact')

@@ -1,6 +1,6 @@
 import { Mail } from 'lucide-react'
 import { site } from '../data/site'
-import { GithubIcon, LinkedinIcon } from './icons'
+import { DownloadIcon, GithubIcon, LinkedinIcon } from './icons'
 
 const year = new Date().getFullYear()
 
@@ -53,6 +53,15 @@ export default function Footer() {
                 href={`mailto:${site.email}`}
               >
                 <Mail size={15} aria-hidden="true" /> Email
+              </a>
+            </li>
+            <li>
+              <a
+                className="inline-flex items-center gap-1.5 text-muted no-underline hover:text-accent"
+                href={site.cvUrl}
+                download={site.cvFileName}
+              >
+                <DownloadIcon size={15} /> CV
               </a>
             </li>
           </ul>
