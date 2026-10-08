@@ -1,5 +1,6 @@
 import { Mail } from 'lucide-react'
 import ContactForm from '../components/ContactForm'
+import CvButton from '../components/CvButton'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import { site } from '../data/site'
@@ -14,6 +15,7 @@ export default function Contact() {
             Send a message with the form, or email me directly. You can also
             find me on GitHub and LinkedIn.
           </p>
+          <CvButton className="mt-6" />
           <dl className="mt-8 space-y-5">
             <div>
               <dt className="font-mono text-xs uppercase tracking-[0.16em] text-accent">

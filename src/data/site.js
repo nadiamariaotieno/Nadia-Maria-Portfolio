@@ -26,6 +26,8 @@ export const site = {
   portfolioRepoUrl:
     optionalUrl(env.VITE_PORTFOLIO_REPO_URL) ||
     'https://github.com/nadiamariaotieno/Nadia-Maria-Portfolio',
+  cvUrl: '/Nadia-Maria-Otieno-CV.pdf',
+  cvFileName: 'Nadia-Maria-Otieno-CV.pdf',
   tagline:
     'I build practical web applications and reliable systems, with a growing focus on secure software development and cybersecurity.',
   exploring: [

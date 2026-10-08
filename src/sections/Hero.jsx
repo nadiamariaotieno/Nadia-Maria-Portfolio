@@ -1,4 +1,5 @@
 import Button from '../components/Button'
+import CvButton from '../components/CvButton'
 import Reveal from '../components/Reveal'
 import SocialLinks from '../components/SocialLinks'
 import SystemSketch from '../components/SystemSketch'
@@ -26,6 +27,7 @@ export default function Hero() {
             >
               View Projects
             </Button>
+            <CvButton />
             <Button
               href="#contact"
               variant="secondary"
