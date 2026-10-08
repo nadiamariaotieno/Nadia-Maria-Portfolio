@@ -46,7 +46,8 @@ public/            # Favicon, robots.txt
 
 Content you are most likely to edit:
 
-- `src/data/site.js` — name, role, email, social URLs
+- `src/data/site.js` — name, role, email, social URLs, CV path
+- `public/Nadia-Maria-Otieno-CV.pdf` — file served by the Download CV buttons
 - `src/data/experience.js` — work history
 - `src/data/projects.js` — project cards
 - `src/data/skills.js` — skill groups and security-direction topics
